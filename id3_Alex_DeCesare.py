@@ -16,12 +16,29 @@ def parse_mp3_file():
    
     mp3_file = get_file(file_location)
     mp3_file.seek(-128,2)
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> added the final code which parses the mp3 file and holds its data and made a output string which shows the data to the user via command line
+>>>>>>> c1a8a50875d402577507a430634a0448bd8df0a8
     if str(mp3_file.read(3), 'utf-8') == 'TAG':
 
         mp3_contents = {
 
                     'title' : str(mp3_file.read(30), 'utf-8'),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                    'artist' : str(mp3_file.read(30), 'utf-8')
+
+                }
+        print(mp3_contents)
+=======
+>>>>>>> c1a8a50875d402577507a430634a0448bd8df0a8
                     'artist' : str(mp3_file.read(30), 'utf-8'),
                     'album' : str(mp3_file.read(30), 'utf-8'),
                     'year' : str(mp3_file.read(4), 'utf-8'),
@@ -36,6 +53,10 @@ def parse_mp3_file():
         
         print(mp3_output)
         mp3_file.close()
+<<<<<<< HEAD
+=======
+>>>>>>> added the final code which parses the mp3 file and holds its data and made a output string which shows the data to the user via command line
+>>>>>>> c1a8a50875d402577507a430634a0448bd8df0a8
 
     else:
         print('No ID3 information')
